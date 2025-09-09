@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'ja-jp'
-title = 'あなたのブログのタイトル'
+title = 'MiyaLab-OutputBlog'
 theme = 'hugo-book' # 使用するテーマ名を指定
