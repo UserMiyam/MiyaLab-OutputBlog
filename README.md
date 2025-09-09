@@ -244,6 +244,7 @@ GitHub Actionsによる自動デプロイを機能させるには、GitHubリポ
 2.  左側のメニューから**「Pages」**を選択します。
 3.  **「Source」**のドロップダウンメニューで、`main`ブランチを選択します。
 4.  次に、`/root`ではなく、**`/docs`**フォルダを公開元として指定します。
+   
 公開サイト：https://usermiyam.github.io/MiyaLab-OutputBlog/
 
 この設定を保存すると、GitHub Actionsが`docs`フォルダにビルドされたファイルを自動でデプロイできるようになります。
