@@ -48,6 +48,7 @@ cd MiyaLab-OutputBlog
 ```sh
 # テーマをGitのサブモジュールとして追加
 git submodule add https://github.com/alex-shpak/hugo-book.git themes/hugo-book
+git submodule add [テーマのGitリポジトリURL] themes/[テーマ名]
 ```
 
 #### 4\. ローカルでの実行
