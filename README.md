@@ -155,20 +155,64 @@ git push -u origin main
 ```
 
 -----
-hugo newコマンドはhugo.tomlを読み込み、正しくcontentフォルダを作成して記事を保存できるようにcontentDir = "content"という設定を記述する必要があります。
+`hugo new`コマンドの使い方をまとめた、より分かりやすいREADMEセクションを作成します。
 
-hugo new [カテゴリ名]/[記事名].md: 
+-----
 
-新しい記事を作成するためのコマンドです。指定したカテゴリ（例: ai/）の中に、my-new-post.mdといったMarkdown形式のファイルが自動で生成されます。 
-このファイルには、タイトルや日付などのメタデータが最初から含まれています。 
+### 5\. 新しい記事の作成
 
-#Atcoderカテゴリに新規作成
-hugo new atcoder/my-new-post.md
+Hugoで新しい記事を作成するには、`hugo new`コマンドを使用します。このコマンドは、`hugo.toml`ファイルの設定に基づいて、指定したカテゴリに記事ファイルを自動で生成します。
 
-#Paizaカテゴリに新規作成
-hugo new paiza/my-new-post.md
+#### コマンドの基本構文
 
-#Goカテゴリに新規作成
-hugo new go/my-new-post.md
+```sh
+hugo new [カテゴリ名]/[記事のファイル名].md
+```
 
+  - **`[カテゴリ名]`**: 記事を分類するフォルダ名です。`content/`フォルダの中に作成されます。
+  - **`[記事のファイル名]`**: 新しい記事のファイル名です。`半角英数字`と`ハイフン`を使うのが一般的です。
+
+#### 実行例
+
+以下の例では、それぞれのカテゴリに新しい記事を作成します。コマンドを実行すると、指定されたパスに記事ファイル（`my-new-post.md`）が生成されます。
+
+  - **AtCoder カテゴリに新規作成**
+
+    ```sh
+    hugo new atcoder/my-new-post.md
+    ```
+
+      - 生成されるファイル: `content/atcoder/my-new-post.md`
+
+  - **Paiza カテゴリに新規作成**
+
+    ```sh
+    hugo new paiza/my-new-post.md
+    ```
+
+      - 生成されるファイル: `content/paiza/my-new-post.md`
+
+  - **Go カテゴリに新規作成**
+
+    ```sh
+    hugo new go/my-new-post.md
+    ```
+
+      - 生成されるファイル: `content/go/my-new-post.md`
+
+#### 記事の編集
+
+コマンド実行後、作成された`Markdown`ファイルを開き、以下の内容を編集してください。
+
+```markdown
+---
+title: "あなたの記事のタイトル"
+date: 2025-04-21T00:00:00+09:00
+draft: false
+tags: ["タグ1", "タグ2"]
+categories: ["カテゴリ名"]
+---
+
+ここに記事の本文をMarkdownで記述します。
+```
 
