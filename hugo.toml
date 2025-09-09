@@ -1,6 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://github.com/UserMiyam/MiyaLab-OutputBlog'
 languageCode = 'ja-jp'
-title = 'Sample'
+title = 'MiyaLab-OutputBlog'
 theme = 'hugo-book' # 使用するテーマ名を指定
 
 contentDir = "content"
+publishDir = "docs"
