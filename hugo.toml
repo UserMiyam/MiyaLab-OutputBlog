@@ -1,4 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'ja-jp'
-title = 'MiyaLab-OutputBlog'
+title = 'Sample'
 theme = 'hugo-book' # 使用するテーマ名を指定
+
+contentDir = "content"

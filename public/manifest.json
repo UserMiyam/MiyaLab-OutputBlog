@@ -1,6 +1,6 @@
 {
-  "name": "あなたのブログのタイトル",
-  "short_name": "あなたのブログのタイトル",
+  "name": "Sample",
+  "short_name": "Sample",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
