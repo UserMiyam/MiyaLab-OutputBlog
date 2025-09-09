@@ -34,12 +34,12 @@ cd MiyaLab-OutputBlog
 
 2.  作成した`hugo.toml`をエディタで開き、以下の内容をコピー＆ペーストしてください。
 
-    ```toml
-    baseURL = 'http://example.org/'
-    languageCode = 'ja-jp'
-    title = 'あなたのブログのタイトル'
-    theme = 'hugo-book'
-    ```
+   ```toml
+  baseURL = 'http://example.org/'
+  languageCode = 'ja-jp'
+  title = 'あなたのブログのタイトル'
+  theme = 'hugo-book'
+  ```
 
 #### 3\. テーマの追加
 
