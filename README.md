@@ -18,6 +18,7 @@ title = 'あなたのブログのタイトル'
 theme = 'hugo-book'
 
 ・テーマをGitのサブモジュールとして追加
+git submodule add [テーマのGitリポジトリURL] themes/[テーマ名]
 git submodule add https://github.com/alex-shpak/hugo-book.git themes/hugo-book
 
 ・ローカル環境実行
