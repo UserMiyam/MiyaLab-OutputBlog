@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'ja-jp'
+title = 'あなたのブログのタイトル'
+theme = 'hugo-book' # 使用するテーマ名を指定
