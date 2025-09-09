@@ -3,7 +3,7 @@
 
 ### MiyaLab-OutputBlog へようこそ！
 
-MiyaLab-OutputBlogは、HugoとGitHub Pagesを利用して構築された、技術学習の記録と共有を目的とした技術ブログです。
+MiyaLab-OutputBlogは、HugoとGitHub Pagesを利用して構築された、技術学習の棚卸を目的とした技術ブログです。
 
 -----
 
