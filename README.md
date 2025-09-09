@@ -74,3 +74,6 @@ git commit -m "feat: Initial commit of Hugo site"
 # GitHubへプッシュ
 git push -u origin main
 ```
+
+
+-----
