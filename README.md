@@ -235,6 +235,7 @@ hugo
 
 ---
 
+
 ### GitHub Pagesでの公開
 
 GitHub Actionsによる自動デプロイを機能させるには、GitHubリポジトリ側で一度だけ設定が必要です。
@@ -246,7 +247,6 @@ GitHub Actionsによる自動デプロイを機能させるには、GitHubリポ
 
 この設定を保存すると、GitHub Actionsが`docs`フォルダにビルドされたファイルを自動でデプロイできるようになります。
 
----
 
 
 
