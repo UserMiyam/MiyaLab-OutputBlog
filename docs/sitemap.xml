@@ -2,31 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/</loc>
-    <lastmod>2025-09-09T23:32:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/go/</loc>
-    <lastmod>2025-09-09T23:32:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/go/my-new-post/</loc>
-    <lastmod>2025-09-09T23:32:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/paiza/my-new-post/</loc>
-    <lastmod>2025-09-09T23:32:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/paiza/</loc>
-    <lastmod>2025-09-09T23:32:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/atcoder/</loc>
-    <lastmod>2025-09-09T23:24:39+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/atcoder/my-new-post/</loc>
-    <lastmod>2025-09-09T23:24:39+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/test/</loc>
-  </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/MiyaLab-OutputBlog/</loc>
   </url>
 </urlset>
