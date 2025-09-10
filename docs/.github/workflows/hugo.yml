@@ -1,0 +1,59 @@
+# ワークフロー名
+name: Hugo 自動ビルド・デプロイ
+
+# ワークフローが起動する条件を定義
+on:
+  # mainブランチへのプッシュをトリガーにする
+  push:
+    branches:
+      - main
+    paths:
+      # 以下のディレクトリやファイルに変更があった場合のみ実行
+      - 'content/**'
+      - 'static/**'
+      - 'layouts/**'
+      - 'hugo.toml'
+  # GitHubのActionsタブから手動で実行できるようにする
+  workflow_dispatch:
+
+# 実行するジョブ（作業のまとまり）を定義
+jobs:
+  # 'build_deploy'という名前のジョブ
+  build_deploy:
+    # このジョブを実行するOSを指定
+    runs-on: ubuntu-latest
+
+    # 実行するステップ（各作業）を定義
+    steps:
+      # 1. リポジトリのコードをチェックアウト（ローカルにコピーする）
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # テーマなどのサブモジュールも取得
+          fetch-depth: 0    # リポジトリの全履歴を取得
+
+      # 2. Hugoのセットアップ（ビルドに必要なHugo本体をインストールする）
+      - name: Hugoのセットアップ
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest' # 最新版のHugoを使用
+
+      # 3. サイトをビルド
+      - name: サイトをビルド
+        # 'hugo'コマンドを実行して、サイトを静的ファイルに変換
+        # '--gc'は不要なファイルを削除、'--minify'はファイルを圧縮
+        run: hugo --gc --minify
+
+      # 4. GitHub Pagesにデプロイ
+      - name: GitHub Pagesにデプロイ
+        # peaceirisが作成したデプロイ用のアクションを使用
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # GitHubトークンを使って認証
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # ビルドされたファイルが出力されるディレクトリを指定
+          publish_dir: ./docs
+          # カスタムドメインを使用しない場合は空にする
+          cname: ''
+          
+          ##test

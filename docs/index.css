@@ -1,0 +1,141 @@
+
+/*初期化⁺サイドバー*/
+*{
+    margin:9px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;/*丸い点削除*/
+    text-decoration: none;/*ボーダーライン削除*/
+}
+
+.sidebar{
+    position:fixed; /* 要素の位置を固定する */
+    top:0px;/*上詰める※*/
+    padding-top: 100px;
+    right: -250px;
+    background: rgba(242, 242, 242, 0.5);/*rgbaで背景透明*/
+    width: 250px;
+    height: 100%;
+    user-select:none;/*ユーザーセレクトコピペ不可*/
+
+    transition: all 0.5s;/*ロパティが変化する際のアニメーションの速度を操作する手段*/
+}
+.sidebar ul a{
+    display: block;/*aタグインライン要素をブロックにすることで高さ幅指定可*/
+    height: 100%;
+    width: 100%;
+    line-height: 40px;/*余白paddingでも可*/
+    color: black;
+
+}
+ul li:hover a{
+    padding-left: 5px; /*hoverで文字右にずらし、親要素にtransitionで秒数s*/
+}
+
+/*toggle　sectionボタン*/
+#check {
+    display: none;
+}
+
+label #btm,
+label #cancel{
+    position:absolute;
+    cursor: pointer;
+    
+    border-radius: 3px;
+}
+label #btm{/*label #BtmのHTML*/
+    right:10px;
+    top: 25px;
+    font-size:30px;
+    color:black;
+    padding: 6px 12px;
+
+    
+}
+label #cancel{
+    z-index:1;/*要素を上にしてクリック可能に*/
+    right: -195px;
+    top:25px;
+    font-size:30px;
+    color: black;
+    padding: 4px 9px;
+
+    transform: 0.5px;
+    position: fixed;/*固定スクロール追跡*/
+}
+/*checkされたら表示指定.sidebarのright-250を0に戻す*/
+#check:checked ~ .sidebar{
+    right: 0;
+}
+#check:checked ~ label #btm{
+    left:250px;
+    opacity:0;
+    pointer-events: none;
+
+}
+/*× #cancelのrightを－にして、元に戻す指定*/
+#check:checked ~ label #cancel{
+    right:195px;
+}
+
+
+/*_________________________________________*/
+
+
+/*●スライド画像*/
+.slide{
+    white-space: nowrap;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+/*overflow: hiddenなコンテナで包みます。サイズも指定します。
+継承されないCSSを継承したい時に使用するのが「inherit」*/
+.slide img{
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+/*margin-leftを負の値にするフレームワークとアニメーション*/
+@keyframes slide-4{
+    0%{ margin-left: 0;}
+    33%{ margin-left: -100%;}
+    66%{ margin-left: -200%;}
+    100%{ max-left: -300%;}
+}
+.slide > :first-child {
+    animation-name: slide-4;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+h1{
+    font-size: 32px;
+}
+/*レスポンシブ480、メディアクエリ、スニペット機能*/
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 24px;
+        color: black;
+    }}
+
+
+    /*_________________________________________*/
+
+    .rogo{
+        display: flex;
+        user-select:none;/*ユーザーセレクトコピペ不可*/
+    }
+  .rogo a {
+    position: absolute; /*自由に配置する指定*/
+  right: 250px;
+  margin: 40px;
+  color:black;
+  font-size: 25px;
+  }
