@@ -8,6 +8,12 @@
     text-decoration: none;/*ボーダーライン削除*/
 }
 
+
+.tag {
+display: flex;
+}
+
+
 .sidebar{
     position:fixed; /* 要素の位置を固定する */
     top:0px;/*上詰める※*/
@@ -100,7 +106,7 @@ label #cancel{
     border: none;
 }
 /*margin-leftを負の値にするフレームワークとアニメーション*/
-@keyframes slide-4{
+/* @keyframes slide-4{
     0%{ margin-left: 0;}
     33%{ margin-left: -100%;}
     66%{ margin-left: -200%;}
@@ -111,7 +117,7 @@ label #cancel{
     animation-duration: 20s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-}
+} */
 
 
 
