@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="taxonomy-page">
+    <h1>{{ .Title }}</h1>
+    <div class="posts-list">
+        {{ range .Pages }}
+        <article class="post-summary">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p class="post-meta">{{ .Date.Format "2006/01/02" }}</p>
+            {{ if .Summary }}
+            <p>{{ .Summary }}</p>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

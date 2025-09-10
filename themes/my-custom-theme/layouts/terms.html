@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="taxonomy-page">
+    <h1>{{ .Title }}</h1>
+    <div class="taxonomy-list">
+        {{ range .Data.Terms.Alphabetical }}
+        <div class="taxonomy-term">
+            <h3><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h3>
+            <p>{{ .Count }}件の投稿</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

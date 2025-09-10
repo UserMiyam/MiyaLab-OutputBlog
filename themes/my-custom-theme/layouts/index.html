@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="home-content">
+    <h1>{{ .Site.Title }}</h1>
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    <section class="recent-posts">
+        <h2>最新の投稿</h2>
+        <div class="posts-list">
+            {{ range first 10 (where .Site.RegularPages "Type" "in" (slice "atcoder" "paiza" "go")) }}
+            <article class="post-summary">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="post-meta">{{ .Date.Format "2006/01/02" }} | {{ .Type }}</p>
+                {{ if .Summary }}
+                <p>{{ .Summary }}</p>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}
