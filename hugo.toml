@@ -1,7 +1,32 @@
-baseURL = 'https://github.com/UserMiyam/MiyaLab-OutputBlog'
-languageCode = 'ja-jp'
-title = 'MiyaLab-OutputBlog'
-theme = 'hugo-book' # 使用するテーマ名を指定
+# サイトの基本設定
+baseURL = "https://UserMiyam.github.io/MiyaLab-OutputBlog/"
+languageCode = "ja-jp"
+title = "" # タイトルを空に
+# theme = "hugo-book"
 
+# コンテンツと公開先のディレクトリ設定
 contentDir = "content"
 publishDir = "docs"
+
+# Bookテーマ用の設定（テーマを無効化しているので不要だが残っている）
+[params]
+  BookSearch = false
+  BookMenuBundle = false
+  BookServiceWorker = false
+  disablePathToLower = true
+
+# ヘッダーに表示するメニュー
+[[menu.main]]
+  name = "Paiza"
+  url = "/docs/paiza/"
+  weight = 10
+
+[[menu.main]]
+  name = "Atcoder"
+  url = "/docs/atcoder/"
+  weight = 20
+
+[[menu.main]]
+  name = "Go言語"
+  url = "/docs/go/"
+  weight = 30
