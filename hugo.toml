@@ -7,6 +7,11 @@ title = "" # タイトルを空に
 # コンテンツと公開先のディレクトリ設定
 contentDir = "content"
 publishDir = "docs"
+ignoreFiles = ["public/.*"]
+
+[build]
+  writeStats = false
+  useResourceCacheWhen = "fallback"
 
 # Bookテーマ用の設定（テーマを無効化しているので不要だが残っている）
 [params]
