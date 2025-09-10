@@ -1,13 +1,12 @@
 # サイトの基本設定
-baseURL = "http://localhost:1313/"
-# baseURL = "https://UserMiyam.github.io/MiyaLab-OutputBlog/"
+baseURL = "https://usermiyam.github.io/MiyaLab-OutputBlog/"
 languageCode = "ja-jp"
-# theme = "hugo-book"
-theme = "my-custom-theme"
+title = "MiyaLab-OutputBlog"
+theme = "my-custom-theme"  # 自分のテーマ名に変える
+publishDir = "docs"        # ここでdocsに出力する設定
 
 # コンテンツと公開先のディレクトリ設定
 contentDir = "content"
-publishDir = "docs"
 
 
 # ヘッダーに表示するメニュー
