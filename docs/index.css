@@ -8,11 +8,10 @@
     text-decoration: none;/*ボーダーライン削除*/
 }
 
-.tag ul {
+.tag li {
     display: flex; /* ulの子要素であるliも横並びにする */
     list-style: none; /* リストのマーカーを非表示にする */
-    padding: 0; /* デフォルトのパディングを削除 */
-    margin: 0; /* デフォルトのマージンを削除 */
+    color: black;
 }
 
 
