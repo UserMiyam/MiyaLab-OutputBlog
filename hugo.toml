@@ -1,6 +1,6 @@
 # サイトの基本設定
-# baseURL = "https://usermiyam.github.io/MiyaLab-OutputBlog/"
-baseURL = "http://localhost:1313/MiyaLab-OutputBlog/"  # ローカル用
+baseURL = "https://usermiyam.github.io/MiyaLab-OutputBlog/"
+# baseURL = "http://localhost:1313/MiyaLab-OutputBlog/"  # ローカル用
 languageCode = "ja-jp"
 title = "MiyaLab-OutputBlog"
 theme = "my-custom-theme"  # 自分のテーマ名に変える
