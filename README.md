@@ -308,3 +308,64 @@ git push origin main
 
 これで、GitHub Actionsが残りの作業を自動で行います。GitHubの\*\*「Actions」タブ\*\*で、デプロイの状況を確認できます。
 
+-----
+
+# Hugo 独自テーマ `my-custom-theme` の設定ガイド
+
+このガイドでは、`MiyaLab-OutputBlog` リポジトリに含まれる独自テーマ `my-custom-theme` の設定とカスタマイズ方法について説明します。
+
+## 1. テーマの構造
+
+`my-custom-theme` は、以下の主要なディレクトリとファイルで構成されています。
+
+```
+themes/my-custom-theme/
+├── layouts/
+│   ├── _default/
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   ├── index.html
+│   ├── taxonomy.html
+│   └── terms.html
+└── static/
+    └── css/
+        └── style.css (仮定)
+```
+
+- `layouts/`: サイトのHTMLレイアウトを定義するファイルが格納されています。
+  - `_default/`: デフォルトのレイアウトファイル（`baseof.html`, `list.html`, `single.html`）が含まれており、サイトの基本的な構造を定義します。
+  - `index.html`: トップページのレイアウトを定義します。
+  - `taxonomy.html`, `terms.html`: タクソノミー（カテゴリやタグなど）の表示を定義します。
+- `static/`: CSS、JavaScript、画像などの静的ファイルが格納されます。`css/style.css` のようなファイルが含まれることが一般的です。
+
+## 2. `hugo.toml`でのテーマ指定
+
+`my-custom-theme` を使用するには、プロジェクトのルートにある `hugo.toml` ファイルでテーマ名を指定する必要があります。`hugo.toml` を開き、`theme` の行を以下のように設定してください。
+
+```toml
+theme = 'my-custom-theme'
+```
+
+## 3. レイアウトのカスタマイズ
+
+テーマの見た目や動作をカスタマイズするには、主に `layouts/` ディレクトリ内のファイルを編集します。
+
+- **基本的なページレイアウト**: `layouts/_default/baseof.html` は、すべてのページの基本となるHTML構造を定義します。ヘッダーやフッターなど、サイト全体で共通する要素はここに記述します。
+- **記事一覧ページ**: `layouts/_default/list.html` は、記事の一覧ページ（例: カテゴリページ、タグページ）の表示方法を定義します。
+- **個別記事ページ**: `layouts/_default/single.html` は、個別の記事ページの表示方法を定義します。
+- **トップページ**: `layouts/index.html` は、サイトのトップページのレイアウトを定義します。
+
+これらのファイルを直接編集することで、サイトのデザインを自由に変更できます。
+
+## 4. スタイルのカスタマイズ
+
+サイトのスタイル（CSS）をカスタマイズするには、`static/css/` ディレクトリ内のCSSファイルを編集します。例えば、`style.css` に新しいCSSルールを追加することで、フォント、色、レイアウトなどを変更できます。
+
+Hugoは、`static/` ディレクトリ内のファイルをサイトのルートにコピーするため、CSSファイルは `/<テーマ名>/css/style.css` のようなパスでアクセス可能になります。これを `layouts/partials/head.html` などで適切に読み込む必要があります。
+
+## 5. その他の設定
+
+- **`theme.toml`**: `themes/my-custom-theme/theme.toml` ファイルは、テーマのメタデータ（名前、作者、バージョンなど）を定義します。このファイルは主にテーマを公開する際に使用されますが、ローカルでの開発においてもテーマの情報を管理するのに役立ちます。
+
+
