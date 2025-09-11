@@ -293,8 +293,8 @@ MiyaLab-OutputBlogのREADMEに、GitHub Actionsによる自動デプロイの説
 <!-- end list -->
 
 ```sh
-● # Hugoサイトをビルド
-  hugo --cleanDestinationDir
+# Hugoサイトをビルド
+# hugo --cleanDestinationDir
 
 # すべての変更をステージング
 git add .
