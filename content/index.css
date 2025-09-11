@@ -11,14 +11,16 @@
 
 
 .tag ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    padding: 0;
+    display: flex !important;
+    list-style: none !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .tag li {
     margin: 0 !important;
+    display: inline-block !important;
 }
 
 
