@@ -9,8 +9,16 @@
 }
 
 
-.tag {
-display: flex;
+
+.tag ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.tag li {
+    margin: 0;
 }
 
 
@@ -92,8 +100,8 @@ label #cancel{
 /*●スライド画像*/
 .slide{
     white-space: nowrap;
-    width: 1920px;
-    height: 1080px;
+    /* width: 1920px;
+    height: 1080px; */
     overflow: hidden;
 }
 /*overflow: hiddenなコンテナで包みます。サイズも指定します。
