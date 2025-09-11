@@ -6,7 +6,6 @@
 MiyaLab-OutputBlogは、HugoとGitHub Pagesを利用して構築された、技術学習の棚卸を目的とした技術ブログです。 
 
 https://usermiyam.github.io/MiyaLab-OutputBlog/
-修正中
 
 -----
 
