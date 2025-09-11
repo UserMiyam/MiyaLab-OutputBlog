@@ -31,17 +31,15 @@
             <li><a href="{{ relLangURL "go" }}">Go言語</a></li>
         </ul>
     </div>
-
-<main></main> 
-
-
+    
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <footer>
+        <small>
+        © MiyaLab-OutputBlog 2025
+        </small>
+    </footer>
 </body>
-
-<footer>
-    <small>
-    © MiyaLab-OutputBlog 2025
-    </small>
-  </footer>
-
-
 </html>
