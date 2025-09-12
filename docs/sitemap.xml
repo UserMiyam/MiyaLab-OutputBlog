@@ -3,19 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/go/</loc>
-    <lastmod>2025-09-11T22:00:00+09:00</lastmod>
+    <lastmod>2025-09-12T21:00:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/</loc>
+    <lastmod>2025-09-12T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MiyaLab-OutputBlog/go/ddd/</loc>
     <lastmod>2025-09-11T22:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/MiyaLab-OutputBlog/go/goroutine/</loc>
+    <lastmod>2025-09-09T23:32:54+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/programming/my-new-post/</loc>
     <lastmod>2025-09-09T23:32:46+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/programming/</loc>
     <lastmod>2025-09-09T23:32:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/MiyaLab-OutputBlog/poem/my-new-post/</loc>
-    <lastmod>2025-09-09T23:24:39+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/MiyaLab-OutputBlog/poem/</loc>
     <lastmod>2025-09-09T23:24:39+09:00</lastmod>
