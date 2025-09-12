@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ホーム on MiyaLab-OutputBlog</title>
-    <link>https://usermiyam.github.io/MiyaLab-OutputBlog/</link>
+    <link>http://localhost:1313/MiyaLab-OutputBlog/</link>
     <description>Recent content in ホーム on MiyaLab-OutputBlog</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 11 Sep 2025 22:00:00 +0900</lastBuildDate>
-    <atom:link href="https://usermiyam.github.io/MiyaLab-OutputBlog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/MiyaLab-OutputBlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go言語でDDDの値オブジェクト</title>
-      <link>https://usermiyam.github.io/MiyaLab-OutputBlog/go/</link>
+      <link>http://localhost:1313/MiyaLab-OutputBlog/go/</link>
       <pubDate>Thu, 11 Sep 2025 22:00:00 +0900</pubDate>
-      <guid>https://usermiyam.github.io/MiyaLab-OutputBlog/go/</guid>
+      <guid>http://localhost:1313/MiyaLab-OutputBlog/go/</guid>
       <description>&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/KAOepDzaOK&#34;&gt;https://t.co/KAOepDzaOK&lt;/a&gt;&lt;br&gt;難しいことは言えないのでシンプルに壁打ち🤔&lt;/p&gt;&amp;mdash; &amp;quot;MIYA&amp;quot; (@miya38eng) &lt;a href=&#34;https://twitter.com/miya38eng/status/1964704461550747672?ref_src=twsrc%5Etfw&#34;&gt;September 7, 2025&lt;/a&gt;&lt;/blockquote&gt;&#xA;&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;</description>
     </item>
     <item>
       <title>My New Post</title>
-      <link>https://usermiyam.github.io/MiyaLab-OutputBlog/paiza/my-new-post/</link>
+      <link>http://localhost:1313/MiyaLab-OutputBlog/programming/my-new-post/</link>
       <pubDate>Tue, 09 Sep 2025 23:32:46 +0900</pubDate>
-      <guid>https://usermiyam.github.io/MiyaLab-OutputBlog/paiza/my-new-post/</guid>
+      <guid>http://localhost:1313/MiyaLab-OutputBlog/programming/my-new-post/</guid>
       <description>&lt;h1 id=&#34;こんにちは新しいブログへようこそ&#34;&gt;こんにちは、新しいブログへようこそ！&lt;/h1&gt;&#xA;&lt;p&gt;この投稿は、静的サイトジェネレータHugoを使って初めて作成した記事です。サイトのセットアップは最初は少し大変かもしれませんが、一度慣れてしまえば、Markdownで書くだけで簡単にブログを更新できるようになります。&lt;/p&gt;&#xA;&lt;h2 id=&#34;このブログで書くこと&#34;&gt;このブログで書くこと&lt;/h2&gt;&#xA;&lt;p&gt;このブログでは、主に以下の内容について書いていこうと思います。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;プログラミング学習の記録&lt;/li&gt;&#xA;&lt;li&gt;最新のWeb技術について&lt;/li&gt;&#xA;&lt;li&gt;個人的なプロジェクトの進捗&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>My New Post</title>
+      <link>http://localhost:1313/MiyaLab-OutputBlog/poem/my-new-post/</link>
+      <pubDate>Tue, 09 Sep 2025 23:24:39 +0900</pubDate>
+      <guid>http://localhost:1313/MiyaLab-OutputBlog/poem/my-new-post/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

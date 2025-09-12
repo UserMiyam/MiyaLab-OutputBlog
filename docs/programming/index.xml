@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings on MiyaLab-OutputBlog</title>
+    <link>http://localhost:1313/MiyaLab-OutputBlog/programming/</link>
+    <description>Recent content in Programmings on MiyaLab-OutputBlog</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 09 Sep 2025 23:32:46 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/MiyaLab-OutputBlog/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My New Post</title>
+      <link>http://localhost:1313/MiyaLab-OutputBlog/programming/my-new-post/</link>
+      <pubDate>Tue, 09 Sep 2025 23:32:46 +0900</pubDate>
+      <guid>http://localhost:1313/MiyaLab-OutputBlog/programming/my-new-post/</guid>
+      <description>&lt;h1 id=&#34;こんにちは新しいブログへようこそ&#34;&gt;こんにちは、新しいブログへようこそ！&lt;/h1&gt;&#xA;&lt;p&gt;この投稿は、静的サイトジェネレータHugoを使って初めて作成した記事です。サイトのセットアップは最初は少し大変かもしれませんが、一度慣れてしまえば、Markdownで書くだけで簡単にブログを更新できるようになります。&lt;/p&gt;&#xA;&lt;h2 id=&#34;このブログで書くこと&#34;&gt;このブログで書くこと&lt;/h2&gt;&#xA;&lt;p&gt;このブログでは、主に以下の内容について書いていこうと思います。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;プログラミング学習の記録&lt;/li&gt;&#xA;&lt;li&gt;最新のWeb技術について&lt;/li&gt;&#xA;&lt;li&gt;個人的なプロジェクトの進捗&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
